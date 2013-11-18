@@ -9,8 +9,8 @@
  */
 function ckeditor_settings_ckeditor_profile_defaults() {
   $data = array(
-    'Full' => array(
-      'name' => 'Full',
+    'Editor' => array(
+      'name' => 'Editor',
       'settings' => array(
         'ss' => 2,
         'default' => 't',

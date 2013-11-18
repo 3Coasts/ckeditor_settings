@@ -1,9 +1,9 @@
 name = CKEditor Settings
 core = 7.x
 package = Features
+dependencies[] = ckeditor
 dependencies[] = features
 dependencies[] = filter
-features[ckeditor_profile][] = Full
+features[ckeditor_profile][] = Editor
 features[features_api][] = api:2
 features[filter][] = editor
-features_exclude[dependencies][ckeditor] = ckeditor
