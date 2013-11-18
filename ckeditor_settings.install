@@ -1,0 +1,12 @@
+<?php
+function ckeditor_settings_install() {
+  db_delete('ckeditor_input_format')
+    ->condition('name', 'Advanced')
+    ->execute();
+  db_delete('ckeditor_input_format')
+    ->condition('name', 'Full')
+    ->execute();
+  db_insert('ckeditor_input_format')
+    ->fields(array('name' => 'Editor', 'format' => 'editor'))
+    ->execute();
+}
